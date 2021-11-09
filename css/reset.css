@@ -42,4 +42,6 @@ button, input {
     font-family: inherit;
     font-size: inherit;
     text-align: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
 }

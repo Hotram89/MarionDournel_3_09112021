@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    
     <title>Ohmyfood</title>
 </head>
 <body>
@@ -18,8 +19,11 @@
     <h1 class="headerLogo">ohmyfood</h1>
     <section class="localisation">
         <header class="city">
-            <label for="cityIcon"><i class="cityIcon fas fa-map-marker-alt"></i></label>
-            <form>Paris, Belleville</form>
+            <form class="searchCity">
+                <i class="cityIcon fas fa-map-marker-alt"></i>
+        
+            <input type="text" value="Paris, Belleville" placeholder="Quelle ville cherchez vous?"></input>
+            </form>
         </header>
         <div class="baseline">
             <h1 class="descriptionTitle">Réservez le menu qui vous convient</h1>
@@ -28,6 +32,26 @@
         <button class="btn-rounded">Explorer nos restaurants</button>
     </section>
     </header>
-    
+    <main>
+        <section class="fonction">
+            <h1 class="fonctionTitle">Fonctionnement</h1>
+            <button class="fonction-btn">
+                <i class="number">1</i>
+                <i class="iphone fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+
+            </button>
+            <button class="fonction-btn">
+                <i class="number">2</i>
+                <i class="liste fas fa-list-ul"></i>
+                <p>Composez votre menu</p>
+            </button>
+            <button class="fonction-btn">
+                <i class="number">3</i>
+                <i class="store fas fa-store"></i>
+                <p>Dégustez au restaurant</p>
+            </button>
+        </section>
+    </main>
 </body>
 </html>
