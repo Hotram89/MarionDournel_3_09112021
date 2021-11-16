@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  overflow-wrap: break-word;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+ul, ol, li, figure {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style: none;
+}
+
+img, svg {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button, input {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+}
+
+/******* POLICES ECRITURE*********/
+/*********************************/
+.btn-rounded {
+  padding: 1.3rem;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fonction-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0.5rem;
+  gap: 2rem;
+  background-color: #f6f6f6;
+  padding: 1.5rem 0;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.fonction-btn:hover {
+  background-color: #f5edff;
+}
+
+.btn-plate {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+.btn-plate h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+.btn-plate p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.btn-plate .price {
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+.headerLogo {
+  font-family: "Shrikhand";
+  font-size: 2rem;
+  padding: 23px 10px 18px 10px;
+  background-color: white;
+  width: 100%;
+}
+
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #eaeaea;
+  color: #353535;
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cityIcon i {
+  padding-right: 8px;
+}
+
+.headerAccueil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.descriptionTitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 2rem 4rem 1rem 4rem;
+}
+
+.descriptionSubtitle {
+  opacity: 60%;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.btn-rounded {
+  padding: 1.3rem;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*********RESTAURANT HEADER*******/
+/*********************************/
+.pageHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backhome {
+  padding: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/****************************************************/
+/********************FOOTER**************************/
+/****************************************************/
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1.5rem;
+}
+
+.logoFooter {
+  font-family: "Shrikhand";
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footerLink {
+  display: flex;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+footer i {
+  width: 8%;
+}
+
+/****************************************************/
+/****************SECTION FONCTIONNEMENT**************/
+/****************************************************/
+.fonction {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+i {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 25px;
+  flex-shrink: 0;
+  position: relative;
+  right: 0.5rem;
+  background-color: #9356DC;
+  color: white;
+}
+
+.iphone, .liste {
+  width: 5%;
+  color: grey;
+}
+
+.store {
+  width: 5%;
+  color: grey;
+}
+
+.fonction .fas:hover {
+  color: #9356DC;
+}
+
+/****************************************************/
+/****************SECTION RESTAURANTS*****************/
+/****************************************************/
+.restaurantsList {
+  background-color: #f6f6f6;
+  padding: 3rem 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.cardImage {
+  overflow: hidden;
+}
+
+.cardImage img {
+  height: 175px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.underImage {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.cardTitle {
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}
+
+/******* PHOTO ILLUSTRATION*******/
+/*********************************/
+.illustration {
+  height: 260px;
+  width: 100%;
+}
+
+.illustration img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+/******* ASPECT GENERAL DU MENU*******/
+/*************************************/
+.menu {
+  position: relative;
+  top: -1rem;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem 1rem;
+  border-radius: 50px 50px 0 0;
+}
+
+.menuTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.restaurantName {
+  font-family: "Shrikhand";
+  font-size: 2rem;
+  padding: 23px 10px 18px 10px;
+  width: 100%;
+}
+
+body {
+  min-width: 375px;
+  margin: auto;
+  font-family: "roboto";
+}/*# sourceMappingURL=main.css.map */

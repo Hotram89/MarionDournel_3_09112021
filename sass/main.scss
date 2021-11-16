@@ -1,0 +1,26 @@
+// Base
+@import "./base/reset";
+@import "./base/normalize";
+@import "./base/typo";
+
+//Abstracts
+@import "./abstracts/variables";
+
+// Components
+@import "./components/button";
+
+// Layouts
+@import "./layouts/header";
+@import "./layouts/footer";
+
+// Pages
+@import "./pages/landing-page";
+@import "./pages/restaurantStyle";
+
+
+body{
+    min-width: 375px;
+    margin: auto;
+    font-family: 'roboto';
+}
+

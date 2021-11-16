@@ -1,0 +1,21 @@
+/****************************************************/
+/********************FOOTER**************************/
+/****************************************************/
+footer{
+    background-color: #353535;
+    color: white;
+    padding: 1.5rem;
+}
+.logoFooter{
+    font-family: 'Shrikhand';
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.footerLink{
+    display: flex;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+footer i{
+    width: 8%;
+}

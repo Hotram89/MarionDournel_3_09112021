@@ -1,0 +1,37 @@
+
+/******* PHOTO ILLUSTRATION*******/
+/*********************************/
+.illustration{
+    height: 260px ;
+    width: 100%;
+    
+}
+.illustration img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/******* ASPECT GENERAL DU MENU*******/
+/*************************************/
+.menu{
+    position: relative;
+    top: -1rem;
+    background-color: $colour-background;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem 1rem;
+    border-radius: 50px 50px 0 0;
+}
+.menuTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+.restaurantName{
+    font-family: 'Shrikhand';
+    font-size: 2rem;
+    padding: 23px 10px 18px 10px;
+    width: 100%;
+}
