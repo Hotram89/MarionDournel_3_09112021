@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--ICONES-->
     <script
       src="https://kit.fontawesome.com/48c9fff134.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+     <!--FEUILLES DE STYLE-->
+    <link rel="stylesheet" href="sass/main.css"/>
     
     <title>Ohmyfood</title>
 </head>
 <body>
+     <!--HEADER-->
     <header class="headerAccueil">
     <h1 class="headerLogo">ohmyfood</h1>
     <section class="localisation">
@@ -25,6 +26,7 @@
             <input type="text" value="Paris, Belleville" placeholder="Quelle ville cherchez vous?"></input>
             </form>
         </header>
+         <!--SECTION A PROPOS-->
         <div class="baseline">
             <h1 class="descriptionTitle">Réservez le menu qui vous convient</h1>
             <h2 class="descriptionSubtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
@@ -52,10 +54,12 @@
                 <p>Dégustez au restaurant</p>
             </button>
         </section>
+         <!--SECTION RESTAURANTS-->
         <section class="restaurantsList">
             <h1 class="sectionTitle">Restaurants</h1>
             <div class="container">
                 <article class="card">
+                    <a href="./pages/laPaletteDuGout.html">
                     <figure class="cardImage">
                         <img src="images/restaurants/low/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette de saumon"/>
                     </figure>
@@ -66,8 +70,10 @@
                         </figcaption>
                         <i class="far fa-heart"></i>
                     </div>
+                </a>
                 </article>
                 <article class="card">
+                    <a href="./pages/laNoteEnchantee.html">
                     <figure class="cardImage">
                         <img src="images/restaurants/low/stil-u2Lp8tXIcjw-unsplash.jpg" alt="boulettes tomate"/>
                     </figure>
@@ -78,20 +84,24 @@
                         </figcaption>
                         <i class="far fa-heart"></i>
                     </div>
+                </a>
                 </article>
                 <article class="card">
+                    <a href="./pages/aLaFrancaise.html">
                     <figure class="cardImage">
                         <img src="images/restaurants/low/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toast oeuf"/>
                     </figure>
                     <div class="underImage">
                         <figcaption class="cardBody">
-                            <h2 class="cardTitle">A la française</h2>
+                            <h2 class="cardTitle">À la française</h2>
                             <p>Cité Rouge</p>
                         </figcaption>
                         <i class="far fa-heart"></i>
                     </div>
+                </a>
                 </article>
                 <article class="card">
+                    <a href="/pages/laDeliceDesSens.html">
                     <figure class="cardImage">
                         <img src="images/restaurants/low/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="poisson vapeur"/>
                     </figure>
@@ -102,10 +112,12 @@
                         </figcaption>
                         <i class="far fa-heart"></i>
                     </div>
+                </a>
                 </article>
             </div>
         </section>
     </main>
+    <!--FOOTER-->
     <footer>
         <nav>
             <h1 class="logoFooter">ohmyfood</h1>
@@ -128,7 +140,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="footerLink">
+                    <a class="footerLink" href="mailto:contact@ohmyfood.com">
                         <p class="footerText">Contact</p>
                     </a>
                 </li>
