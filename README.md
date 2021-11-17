@@ -20,3 +20,8 @@ Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un pr
 
 De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie les maquettes du site.
 <img src="./images/logo/preview_Ohmyfood.jpg" />
+
+
+Pour ce projet, vous versionnez tout votre code sur Github avec des commits réguliers pour suivre son avancement et publier le site en ligne plus facilement.
+
+Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !
