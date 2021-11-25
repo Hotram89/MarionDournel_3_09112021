@@ -23,15 +23,28 @@
     padding: 2rem 1rem;
     border-radius: 50px 50px 0 0;
 }
-.menuTitle{
+.menu__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 2rem;
 }
-.restaurantName{
+.restaurant-name{
     font-family: 'Shrikhand';
     font-size: 2rem;
     padding: 23px 10px 18px 10px;
     width: 100%;
+}
+.menu__subtitle{
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+        &::after{
+            content: "";
+            padding-bottom: 0.5rem;
+            width: 2.5rem;
+            border-bottom: $colour-mint 3px solid;
+        }
 }

@@ -4,3 +4,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+
+
+.coeur{
+    width: 2rem;
+    height: 2rem;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+.fa-heart{
+    font-size: 1.8rem;
+    color: $colour-secondary;
+   position: relative;
+   right: -0.1rem;  
+   top: -1.7rem;
+    z-index: -2;
+}
+.coeur::before{
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #f6f6f6;
+    transition: all 1s;
+    z-index: -1;
+    top: 0rem;
+    position: absolute;
+    
+}
+
+.coeur:hover::before{
+    top: -4rem;
+}

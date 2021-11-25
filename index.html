@@ -10,14 +10,14 @@
       crossorigin="anonymous"
     ></script>
      <!--FEUILLES DE STYLE-->
-    <link rel="stylesheet" href="sass/main.css"/>
+    <link rel="stylesheet" href="public/css/style.css"/>
     
     <title>Ohmyfood</title>
 </head>
 <body>
      <!--HEADER-->
-    <header class="headerAccueil">
-    <h1 class="headerLogo">ohmyfood</h1>
+    <header class="header">
+    <h1 class="header__logo">ohmyfood</h1>
     <section class="localisation">
         <header class="city">
             <form class="searchCity">
@@ -28,89 +28,102 @@
         </header>
          <!--SECTION A PROPOS-->
         <div class="baseline">
-            <h1 class="descriptionTitle">Réservez le menu qui vous convient</h1>
-            <h2 class="descriptionSubtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+            <h1 class="baseline__title">Réservez le menu qui vous convient</h1>
+            <h2 class="baseline__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
         </div>
         <button class="btn-rounded">Explorer nos restaurants</button>
     </section>
     </header>
     <main>
         <section class="fonction">
-            <h1 class="sectionTitle">Fonctionnement</h1>
-            <button class="fonction-btn">
-                <i class="number">1</i>
+            <h1 class="section__title">Fonctionnement</h1>
+            <button class="btn-fonction">
+                <i class="btn-fonction__number">1</i>
                 <i class="iphone fas fa-mobile-alt"></i>
                 <p>Choisissez un restaurant</p>
 
             </button>
-            <button class="fonction-btn">
-                <i class="number">2</i>
+            <button class="btn-fonction">
+                <i class="btn-fonction__number">2</i>
                 <i class="liste fas fa-list-ul"></i>
                 <p>Composez votre menu</p>
             </button>
-            <button class="fonction-btn">
-                <i class="number">3</i>
+            <button class="btn-fonction">
+                <i class="btn-fonction__number">3</i>
                 <i class="store fas fa-store"></i>
                 <p>Dégustez au restaurant</p>
             </button>
         </section>
          <!--SECTION RESTAURANTS-->
         <section class="restaurantsList">
-            <h1 class="sectionTitle">Restaurants</h1>
+            <h1 class="section__title">Restaurants</h1>
             <div class="container">
                 <article class="card">
                     <a href="./pages/laPaletteDuGout.html">
-                    <figure class="cardImage">
+                    <figure class="card__image">
                         <img src="images/restaurants/low/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="assiette de saumon"/>
                     </figure>
-                    <div class="underImage">
-                        <figcaption class="cardBody">
-                            <h2 class="cardTitle">La palette du goût</h2>
+                    <div class="card__details">
+                        <figcaption class="card__body">
+                            <h2 class="card__title">La palette du goût</h2>
                             <p>Ménilmontant</p>
                         </figcaption>
-                        <img class="coeur" src="./images/logo/heart-regular-light.svg"/>
+                        <div class="coeur">
+                            <img src="./images/logo/heart-regular-light.svg"/>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        
                     </div>
                 </a>
                 </article>
                 <article class="card">
                     <a href="./pages/laNoteEnchantee.html">
-                    <figure class="cardImage">
+                    <figure class="card__image">
                         <img src="images/restaurants/low/stil-u2Lp8tXIcjw-unsplash.jpg" alt="boulettes tomate"/>
                     </figure>
-                    <div class="underImage">
-                        <figcaption class="cardBody">
-                            <h2 class="cardTitle">La note enchantée</h2>
+                    <div class="card__details">
+                        <figcaption class="card__body">
+                            <h2 class="card__title">La note enchantée</h2>
                             <p>Charonne</p>
                         </figcaption>
-                        <img class="coeur" src="./images/logo/heart-regular-light.svg"/>
+                        <div class="coeur">
+                            <img src="./images/logo/heart-regular-light.svg"/>
+                            <i class="fas fa-heart"></i>
+                        </div>
                     </div>
                 </a>
                 </article>
                 <article class="card">
                     <a href="./pages/aLaFrancaise.html">
-                    <figure class="cardImage">
+                    <figure class="card__image">
                         <img src="images/restaurants/low/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="toast oeuf"/>
                     </figure>
-                    <div class="underImage">
-                        <figcaption class="cardBody">
-                            <h2 class="cardTitle">À la française</h2>
+                    <div class="card__details">
+                        <figcaption class="card__body">
+                            <h2 class="card__title">À la française</h2>
                             <p>Cité Rouge</p>
                         </figcaption>
-                        <img class="coeur" src="./images/logo/heart-regular-light.svg"/>
+                        <div class="coeur">
+                            <img src="./images/logo/heart-regular-light.svg"/>
+                            <i class="fas fa-heart"></i>
+                        </div>
                     </div>
                 </a>
                 </article>
                 <article class="card">
                     <a href="./pages/laDeliceDesSens.html">
-                    <figure class="cardImage">
+                    <figure class="card__image">
                         <img src="images/restaurants/low/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="poisson vapeur"/>
                     </figure>
-                    <div class="underImage">
-                        <figcaption class="cardBody">
-                            <h2 class="cardTitle">Le délice des sens</h2>
+                    <div class="card__details">
+                        <figcaption class="card__body">
+                            <h2 class="card__title">Le délice des sens</h2>
                             <p>Folie-Méricourt</p>
                         </figcaption>
-                        <img class="coeur" src="./images/logo/heart-regular-light.svg"/>
+                        <div class="coeur">
+                            <img src="./images/logo/heart-regular-light.svg"/>
+                            <i class="fas fa-heart"></i>
+                        </div>
                     </div>
                 </a>
                 </article>
@@ -120,28 +133,28 @@
     <!--FOOTER-->
     <footer>
         <nav>
-            <h1 class="logoFooter">ohmyfood</h1>
+            <h1 class="footer__logo">ohmyfood</h1>
             <ul>
                 <li>
-                    <a class="footerLink">
+                    <a class="footer__link">
                         <i class="fas fa-utensils"></i>
-                        <p class="footerText">Proposer un restaurant</p>
+                        <p class="footer__text">Proposer un restaurant</p>
                     </a>
                 </li>
                 <li>
-                    <a class="footerLink">
+                    <a class="footer__link">
                         <i class="fas fa-hands-helping"></i>
-                        <p class="footerText">Devenir partenaire</p>
+                        <p class="footer__text">Devenir partenaire</p>
                     </a>
                 </li>
                 <li>
-                    <a class="footerLink">
-                        <p class="footerText">Mentions légales</p>
+                    <a class="footer__link">
+                        <p class="footer__text">Mentions légales</p>
                     </a>
                 </li>
                 <li>
                     <a class="footerLink" href="mailto:contact@ohmyfood.com">
-                        <p class="footerText">Contact</p>
+                        <p class="footer__text">Contact</p>
                     </a>
                 </li>
             </ul>

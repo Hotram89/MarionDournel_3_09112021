@@ -61,6 +61,33 @@ button, input {
 .coeur {
   width: 2rem;
   height: 2rem;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.fa-heart {
+  font-size: 1.8rem;
+  color: #9356DC;
+  position: relative;
+  right: -0.1rem;
+  top: -1.7rem;
+  z-index: -2;
+}
+
+.coeur::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #f6f6f6;
+  transition: all 1s;
+  z-index: -1;
+  top: 0rem;
+  position: absolute;
+}
+
+.coeur:hover::before {
+  top: -4rem;
 }
 
 .btn-rounded {
@@ -298,8 +325,7 @@ i {
 .card .card__image img {
   height: 175px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 .card .card__details {
@@ -317,8 +343,7 @@ i {
 .card__image img {
   height: 175px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
 
@@ -330,8 +355,7 @@ i {
 }
 
 .illustration img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -373,11 +397,13 @@ i {
   content: "";
   padding-bottom: 0.5rem;
   width: 2.5rem;
-  border-bottom: #99E2D0 3px solid;
+  border-bottom: red 3px solid;
 }
 
 body {
   min-width: 375px;
   margin: auto;
   font-family: "roboto";
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

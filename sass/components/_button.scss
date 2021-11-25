@@ -7,7 +7,7 @@
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.fonction-btn{
+.btn-fonction{
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -18,8 +18,20 @@
     font-weight: bold;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+            .btn-fonction__number{
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 25px;
+                flex-shrink: 0;
+                position: relative;
+                right: 0.5rem;
+                background-color: #9356DC;
+                color: white;}
 }
-.fonction-btn:hover{
+.btn-fonction:hover{
     background-color: #f5edff ;
     
 }
@@ -47,4 +59,19 @@
     align-items: flex-end;
     font-size: 1.5rem;
     padding-right: 1rem;
+}
+.btn-pages {
+    padding: 1.3rem 4rem;
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    width: 15em;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+    margin-bottom: 4rem;
+    margin-top: 3rem;
 }
