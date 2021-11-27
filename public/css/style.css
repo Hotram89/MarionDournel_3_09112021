@@ -185,19 +185,18 @@ button, input {
   align-items: center;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10rem;
-  height: 10rem;
-  background-color: #99E2D0;
-  border-radius: 500px;
-  position: absolute;
-  box-shadow: 0px 0px 10px white;
-  overflow: hidden;
-}
-
+/*.opening .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background-color: #99E2D0;
+    border-radius: 500px;
+    position: absolute;
+    box-shadow: 0px 0px 10px white;
+   overflow: hidden;
+}*/
 /*.loader{
     width: 15rem;
     height: 15rem;
@@ -213,12 +212,14 @@ button, input {
   animation: spin2 1.5s ease-in-out 0.5s 3;
 }
 
-.fa-utensils {
-  font-size: 4em;
-  position: relative;
-  color: #141614;
-}
+/*.fa-utensils{
+    font-size: 4em;
+    position: relative;
+    color: #141614;
 
+
+}
+*/
 @keyframes spin {
   0% {
     background-color: #9356DC;
