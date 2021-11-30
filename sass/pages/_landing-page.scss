@@ -1,75 +1,148 @@
+
+/****************************************************/
+/**********************SEARCH BAR********************/
+/****************************************************/
+.search {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.search input {
+  font-size: 1.1rem;
+  font-family: "roboto";
+  font-weight: 500;
+}
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+.city__icon {
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+/****************************************************/
+/*******************ABOUT SECTION********************/
+/****************************************************/
+.baseline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding-bottom: 3rem;
+    margin-bottom: 2.5rem;
+  }
+.baseline__title {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 2rem 4rem 1rem 4rem;
+}
+.baseline__description {
+  opacity: 60%;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
 /****************************************************/
 /****************SECTION FONCTIONNEMENT**************/
 /****************************************************/
-.fonction{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
+.fonction {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
-.section__title{
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-bottom: 1rem;
-
+.section__title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
 }
 
 i {
-    font-family: 'Roboto';
-    font-style: normal;
+  font-family: "Roboto";
+  font-style: normal;
 }
-
-.iphone , .liste{
-width: 5%;
-color: grey;
+.liste {
+  display: flex;
+  flex-direction: column;
 }
-.store{
-    width: 5%;
-    color: grey;
+.liste__item{
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0.5rem;
+  gap: 2rem;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 1.5rem 0;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+      .liste__item__number{
+          display: flex;
+          justify-content: center;
+          align-items: center;    
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 25px;
+          flex-shrink: 0;
+          position: relative;
+          right: 0.5rem;
+          background-color: #9356DC;
+          color: white;
+      }
 }
-.fonction .fas:hover{
-    color: #9356DC;
+.store {
+  width: 5%;
+  color: grey;
+}
+.fonction .fas:hover {
+  color: #9356dc;
 }
 
 /****************************************************/
 /****************SECTION RESTAURANTS*****************/
 /****************************************************/
-.restaurantsList{
-    background-color: #f6f6f6;
-    padding: 3rem 1.5rem;
+.restaurantsList {
+  background-color: #f6f6f6;
+  padding: 3rem 1.5rem;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.card{
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    .card__image img{
-        height: 175px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;  
-    }
-    .card__details{
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-        align-items: center;
-        border-radius: 0 0 20px 20px;
-    }
-    .card__title{
-        font-weight: bold;
-        padding-bottom: 0.2rem;
-    }
-}
-.card__image img{
+.card {
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  .card__image img {
     height: 175px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    
+  }
+  .card__details {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+  }
+  .card__title {
+    font-weight: bold;
+    padding-bottom: 0.2rem;
+  }
 }
-
-
+.card__image img {
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}

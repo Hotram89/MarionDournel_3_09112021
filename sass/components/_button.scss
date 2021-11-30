@@ -1,4 +1,4 @@
-.btn-rounded{
+.btn{
     padding: 1.3rem;
     border-radius: 30px;
     background: linear-gradient($colour-primary, $colour-secondary);
@@ -7,30 +7,7 @@
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.btn-fonction{
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-    margin: 0.5rem;
-    gap: 2rem;
-    background-color: #f6f6f6;
-    padding: 1.5rem 0;
-    font-weight: bold;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-            .btn-fonction__number{
-                display: flex;
-                justify-content: center;
-                align-items: center;    
-                width: 1.5rem;
-                height: 1.5rem;
-                border-radius: 25px;
-                flex-shrink: 0;
-                position: relative;
-                right: 0.5rem;
-                background-color: #9356DC;
-                color: white;}
-}
+
 .btn-fonction:hover{
     background-color: #f5edff ;
     

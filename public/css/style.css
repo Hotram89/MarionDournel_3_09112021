@@ -90,7 +90,7 @@ button, input {
   top: -4rem;
 }
 
-.btn-rounded {
+.btn {
   padding: 1.3rem;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -98,32 +98,6 @@ button, input {
   color: white;
   cursor: pointer;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.btn-fonction {
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
-  margin: 0.5rem;
-  gap: 2rem;
-  background-color: #f6f6f6;
-  padding: 1.5rem 0;
-  font-weight: bold;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-.btn-fonction .btn-fonction__number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 25px;
-  flex-shrink: 0;
-  position: relative;
-  right: 0.5rem;
-  background-color: #9356DC;
-  color: white;
 }
 
 .btn-fonction:hover {
@@ -252,59 +226,20 @@ button, input {
     opacity: 0;
   }
 }
-.header__logo {
-  font-family: "Shrikhand";
-  font-size: 2rem;
-  padding: 23px 10px 18px 10px;
-  background-color: white;
-  width: 100%;
-}
-
-.city {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  background-color: #eaeaea;
-  color: #353535;
-  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.cityIcon i {
-  padding-right: 8px;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   text-align: center;
-  background-color: #f6f6f6;
-  padding-bottom: 3rem;
-  margin-bottom: 2.5rem;
 }
 
-.baseline__title {
-  font-weight: bold;
-  font-size: 1.5em;
-  padding: 2rem 4rem 1rem 4rem;
-}
-
-.baseline__description {
-  opacity: 60%;
-  margin-bottom: 2rem;
-  padding: 0 2rem;
-}
-
-.btn-rounded {
-  padding: 1.3rem;
-  border-radius: 30px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+.header__logo {
+  font-family: "Shrikhand";
+  font-size: 2rem;
+  padding: 1rem 0px;
+  background-color: white;
+  width: 100%;
 }
 
 /*********RESTAURANT HEADER*******/
@@ -349,6 +284,63 @@ footer i {
 }
 
 /****************************************************/
+/**********************SEARCH BAR********************/
+/****************************************************/
+.search {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search input {
+  font-size: 1.1rem;
+  font-family: "roboto";
+  font-weight: 500;
+}
+
+.city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.city__icon {
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+
+/****************************************************/
+/*******************ABOUT SECTION********************/
+/****************************************************/
+.baseline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.baseline__title {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 2rem 4rem 1rem 4rem;
+}
+
+.baseline__description {
+  opacity: 60%;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+/****************************************************/
 /****************SECTION FONCTIONNEMENT**************/
 /****************************************************/
 .fonction {
@@ -368,9 +360,36 @@ i {
   font-style: normal;
 }
 
-.iphone, .liste {
-  width: 5%;
-  color: grey;
+.liste {
+  display: flex;
+  flex-direction: column;
+}
+
+.liste__item {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0.5rem;
+  gap: 2rem;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 1.5rem 0;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.liste__item .liste__item__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 25px;
+  flex-shrink: 0;
+  position: relative;
+  right: 0.5rem;
+  background-color: #9356DC;
+  color: white;
 }
 
 .store {
@@ -379,7 +398,7 @@ i {
 }
 
 .fonction .fas:hover {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 /****************************************************/

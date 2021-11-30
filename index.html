@@ -23,43 +23,50 @@
     </div>
      <!--HEADER-->
     <header class="header">
-    <h1 class="header__logo">ohmyfood</h1>
-    <section class="localisation">
-        <header class="city">
-            <form class="searchCity">
-                <i class="cityIcon fas fa-map-marker-alt"></i>
-        
-            <input type="text" value="Paris, Belleville" placeholder="Quelle ville cherchez vous?"></input>
+        <h1 class="header__logo">ohmyfood</h1> 
+    </header>
+     <!--BARRE DE RECHERCHES-->
+    <div class="search">
+         <form class="city">
+            <i class="city__icon fas fa-map-marker-alt"></i>
+            <input type="text" value="Paris, Belleville" placeholder="Où allons nous?"></input>
             </form>
-        </header>
+    </div>
+        
          <!--SECTION A PROPOS-->
         <div class="baseline">
             <h1 class="baseline__title">Réservez le menu qui vous convient</h1>
             <h2 class="baseline__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+            <button class="btn">Explorer nos restaurants</button>
         </div>
-        <button class="btn-rounded">Explorer nos restaurants</button>
-    </section>
-    </header>
+        
+    
+   
     <main>
         <section class="fonction">
             <h1 class="section__title">Fonctionnement</h1>
-            <button class="btn-fonction">
-                <i class="btn-fonction__number">1</i>
-                <i class="iphone fas fa-mobile-alt"></i>
-                <p>Choisissez un restaurant</p>
-
-            </button>
-            <button class="btn-fonction">
-                <i class="btn-fonction__number">2</i>
-                <i class="liste fas fa-list-ul"></i>
-                <p>Composez votre menu</p>
-            </button>
-            <button class="btn-fonction">
-                <i class="btn-fonction__number">3</i>
-                <i class="store fas fa-store"></i>
-                <p>Dégustez au restaurant</p>
-            </button>
-        </section>
+            <ul class="liste">
+                <li class="liste__item">
+                    <i class="liste__item__number">1</i>
+                    <i class="liste__item__icon fas fa-mobile-alt"></i>
+                    <p class="liste__item__description">Choisissez un restaurant</p>
+                    
+                </li>
+                <li class="liste__item">
+                    <i class="liste__item__number">2</i>
+                    <i class="liste__item__icon fas fa-mobile-alt"></i>
+                    <p class="liste__item__description">Composez votre menu</p>
+                    
+                </li>
+                <li class="liste__item">
+                    <i class="liste__item__number">3</i>
+                    <i class="liste__item__icon fas fa-mobile-alt"></i>
+                    <p class="liste__item__description">Dégustez au restaurant</p>
+                    
+                </li>
+            </ul>
+            
+       
          <!--SECTION RESTAURANTS-->
         <section class="restaurantsList">
             <h1 class="section__title">Restaurants</h1>
