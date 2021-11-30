@@ -28,13 +28,15 @@
     justify-content: space-between;
     align-items: center;
     font-size: 2rem;
+    padding-right: 2rem;
+    .menu__header__title{
+        font-family: 'Shrikhand';
+        font-size: 2rem;
+        padding: 23px 10px 18px 10px;
+        width: 100%;
+    }
 }
-.restaurant-name{
-    font-family: 'Shrikhand';
-    font-size: 2rem;
-    padding: 23px 10px 18px 10px;
-    width: 100%;
-}
+
 .menu__subtitle{
     padding-bottom: 1rem;
     margin-left: 0.5rem;
@@ -46,5 +48,48 @@
             padding-bottom: 0.5rem;
             width: 2.5rem;
             border-bottom: $colour-mint 3px solid;
+        }
+}
+
+/*******  MENU*******/
+/*************************************/
+.menu-list__item{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    overflow: hidden;
+        h2{
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 0.6rem;
+        }
+        p{
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        
+}
+.menu-list__item__price{
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    border: 1px red solid;
+    position: relative;
+    
+    transition: 1s;
+        &::after{
+            content: '';
+            width: 7rem;
+            height: 7rem;
+            top: -1.5rem;
+            left: 5rem;
+            background-color: $colour-mint;
+            position: absolute;
         }
 }
