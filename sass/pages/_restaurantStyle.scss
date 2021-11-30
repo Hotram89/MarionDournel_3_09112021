@@ -62,6 +62,7 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
     overflow: hidden;
+    transition: 1s;
         h2{
             font-weight: bold;
             font-size: 1.5rem;
@@ -78,18 +79,21 @@
     display: flex;
     align-items: flex-end;
     font-size: 1.5rem;
-    padding-right: 1rem;
-    border: 1px red solid;
+    padding-right: 0.5rem;
     position: relative;
     
-    transition: 1s;
-        &::after{
-            content: '';
+    transition: 0.6s;
+        .checkbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;    
             width: 7rem;
             height: 7rem;
+            position: absolute;
             top: -1.5rem;
             left: 5rem;
+            color: white;
             background-color: $colour-mint;
-            position: absolute;
+            font-size: 2.5rem;      
         }
 }
