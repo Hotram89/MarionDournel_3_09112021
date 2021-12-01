@@ -204,6 +204,9 @@ button, input {
 .menu-list__item:hover .menu-list__item__price {
   transform: translate(-7.5rem, 0);
 }
+.menu-list__item:hover .checkbox {
+  transform: rotate(360deg);
+}
 
 .header {
   display: flex;
@@ -516,6 +519,12 @@ i {
   transition: 0.6s;
 }
 .menu-list__item__price .checkbox {
+  color: white;
+  font-size: 2.5rem;
+  transition: 0.6s;
+}
+
+.validate {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -524,9 +533,8 @@ i {
   position: absolute;
   top: -1.5rem;
   left: 5rem;
-  color: white;
   background-color: #99E2D0;
-  font-size: 2.5rem;
+  transition: 0.6s;
 }
 
 body {

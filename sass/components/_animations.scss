@@ -37,6 +37,10 @@
 
   .menu-list__item__price{
   
-  transform: translate(-7.5rem, 0);
+  transform: translate(-7.5rem, 0) ;
+  }
+ 
+  .checkbox{
+    transform: rotate(360deg);
   }
 }
