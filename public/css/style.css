@@ -172,20 +172,35 @@ button, input {
   z-index: 0;
   position: relative;
   overflow: hidden;
+  transition: 0.6s;
+  border: blue 1px solid;
 }
 
-.contour-heart {
+.fa-heart {
   font-size: 1.8rem;
 }
 
+.contour-heart {
+  opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-size: 1.8rem;
+  position: absolute;
+  transition: 0.6s;
+  left: 0;
+}
+
+.coeur:hover .contour-heart {
+  opacity: 1;
+}
+
+/****************animation pas validee***************
 .full-heart {
   font-size: 1.6rem;
-  color: #9356DC;
+  color: $colour-secondary;
   position: relative;
   top: -1.7rem;
   z-index: -2;
 }
-
 .coeur::before {
   content: "";
   width: 2.5rem;
@@ -200,7 +215,7 @@ button, input {
 .coeur:hover::before {
   top: -4rem;
 }
-
+*****************************************/
 .menu-list__item:hover .menu-list__item__price {
   transform: translate(-7.5rem, 0);
 }
