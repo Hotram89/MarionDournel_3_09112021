@@ -173,7 +173,6 @@ button, input {
   position: relative;
   overflow: hidden;
   transition: 0.6s;
-  border: blue 1px solid;
 }
 
 .fa-heart {
@@ -181,15 +180,24 @@ button, input {
 }
 
 .contour-heart {
-  opacity: 0;
-  background: linear-gradient(#FF79DA, #9356DC);
   font-size: 1.8rem;
+  background-clip: content-box;
   position: absolute;
   transition: 0.6s;
-  left: 0;
 }
 
-.coeur:hover .contour-heart {
+.full-heart {
+  font-size: 1.8rem;
+  position: absolute;
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+.coeur:hover .full-heart {
   opacity: 1;
 }
 
