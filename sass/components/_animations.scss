@@ -58,11 +58,12 @@
 }
 *****************************************/
 .menu-list__item:hover {
-  .menu-list__item__price {
-    transform: translate(-7.5rem, 0);
+ 
+  .dish__validation{
+    transition: 0.6s;
+    padding: 0 2rem;
+    width: 6rem;
+    
   }
 
-  .checkbox {
-    transform: rotate(360deg);
-  }
 }

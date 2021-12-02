@@ -224,11 +224,10 @@ button, input {
   top: -4rem;
 }
 *****************************************/
-.menu-list__item:hover .menu-list__item__price {
-  transform: translate(-7.5rem, 0);
-}
-.menu-list__item:hover .checkbox {
-  transform: rotate(360deg);
+.menu-list__item:hover .dish__validation {
+  transition: 0.6s;
+  padding: 0 2rem;
+  width: 6rem;
 }
 
 .header {
@@ -515,10 +514,10 @@ i {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 1.3rem;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
+  text-overflow: ellipsis;
   overflow: hidden;
   transition: 1s;
 }
@@ -532,32 +531,51 @@ i {
   font-weight: 300;
 }
 
-.menu-list__item__price {
-  font-weight: bold;
+.dish__price {
   display: flex;
   align-items: flex-end;
-  font-size: 1.5rem;
-  padding-right: 0.5rem;
-  position: relative;
-  transition: 0.6s;
-}
-.menu-list__item__price .checkbox {
-  color: white;
-  font-size: 2.5rem;
-  transition: 0.6s;
+  padding: 0;
 }
 
-.validate {
+.dish__number {
+  font-weight: bold;
+  display: flex;
+  font-size: 1.5rem;
+  background-color: yellow;
+  transition: 0.6s;
+  padding: 1rem 1.5rem;
+}
+
+.checkbox {
+  color: white;
+  font-size: 2rem;
+  transition: 0.5s;
+  width: 2rem;
+}
+
+.dish__validation {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7rem;
-  height: 7rem;
-  position: absolute;
-  top: -1.5rem;
-  left: 5rem;
+  width: 0rem;
+  height: 100%;
   background-color: #99E2D0;
-  transition: 0.6s;
+  transition: width 0.3;
+}
+
+.dish__details p,
+h2 {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid blue;
+  text-overflow: ellipsis;
+}
+
+.dish__details {
+  padding: 1rem;
+  background-color: tomato;
+  flex-grow: 1;
 }
 
 body {

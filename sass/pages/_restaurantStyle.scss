@@ -1,108 +1,117 @@
-
 /******* PHOTO ILLUSTRATION*******/
 /*********************************/
-.illustration{
-    height: 260px ;
-    width: 100%;
-    
+.illustration {
+  height: 260px;
+  width: 100%;
 }
-.illustration img{
-    object-fit: cover;
-    width: 100%;
+.illustration img {
+  object-fit: cover;
+  width: 100%;
 }
 
 /******* ASPECT GENERAL DU MENU*******/
 /*************************************/
-.menu{
-    position: relative;
-    top: -1rem;
-    background-color: $colour-background;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 2rem 1rem;
-    border-radius: 50px 50px 0 0;
+.menu {
+  position: relative;
+  top: -1rem;
+  background-color: $colour-background;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem 1rem;
+  border-radius: 50px 50px 0 0;
 }
-.menu__header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  padding-right: 2rem;
+  .menu__header__title {
+    font-family: "Shrikhand";
     font-size: 2rem;
-    padding-right: 2rem;
-    .menu__header__title{
-        font-family: 'Shrikhand';
-        font-size: 2rem;
-        padding: 23px 10px 18px 10px;
-        width: 100%;
-    }
+    padding: 23px 10px 18px 10px;
+    width: 100%;
+  }
 }
 
-.menu__subtitle{
-    padding-bottom: 1rem;
-    margin-left: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    font-weight: 300;
-        &::after{
-            content: "";
-            padding-bottom: 0.5rem;
-            width: 2.5rem;
-            border-bottom: $colour-mint 3px solid;
-        }
+.menu__subtitle {
+  padding-bottom: 1rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  &::after {
+    content: "";
+    padding-bottom: 0.5rem;
+    width: 2.5rem;
+    border-bottom: $colour-mint 3px solid;
+  }
 }
 
 /*******  MENU*******/
 /*************************************/
-.menu-list__item{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.3rem;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
-    overflow: hidden;
-    transition: 1s;
-        h2{
-            font-weight: bold;
-            font-size: 1.5rem;
-            margin-bottom: 0.6rem;
-        }
-        p{
-            font-size: 1.3rem;
-            font-weight: 300;
-        }
-        
-}
-.menu-list__item__price{
-    font-weight: bold;
-    display: flex;
-    align-items: flex-end;
-    font-size: 1.5rem;
-    padding-right: 0.5rem;
-    position: relative;
-    
-    transition: 0.6s;
-        .checkbox{
-            
-            color: white;
-           
-            font-size: 2.5rem;
-            transition: 0.6s;  
-                
-        }
-        
-}
-.validate{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    width: 7rem;
-    height: 7rem;
-    position: absolute;
-    top: -1.5rem;
-    left: 5rem;
-    background-color: $colour-mint;
-    transition: 0.6s;  
+.menu-list__item {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
 
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: 1s;
+  h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+.dish__price {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+.dish__number {
+  font-weight: bold;
+  display: flex;
+  font-size: 1.5rem;
+  background-color: yellow;
+  transition: 0.6s;
+
+  padding: 1rem 1.5rem;
+}
+.checkbox {
+  color: white;
+  font-size: 2rem;
+  transition: 0.5s;
+  width: 2rem;
+  
+}
+.dish__validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0rem;
+  height: 100%;
+  background-color: $colour-mint;
+  transition: width 0.3;
+}
+.dish__details p,
+h2 {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid blue;
+  text-overflow: ellipsis;
+}
+.dish__details {
+  padding: 1rem;
+  background-color: tomato;
+  flex-grow: 1;
 }
