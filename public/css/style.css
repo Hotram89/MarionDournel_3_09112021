@@ -226,7 +226,6 @@ button, input {
 *****************************************/
 .menu-list__item:hover .dish__validation {
   transition: 0.6s;
-  padding: 0 2rem;
   width: 6rem;
 }
 
@@ -514,6 +513,7 @@ i {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  border: blue 1px solid;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
@@ -540,6 +540,7 @@ i {
 .dish__number {
   font-weight: bold;
   display: flex;
+  flex-shrink: 0;
   font-size: 1.5rem;
   background-color: yellow;
   transition: 0.6s;
@@ -559,6 +560,7 @@ i {
   align-items: center;
   width: 0rem;
   height: 100%;
+  flex-shrink: 0;
   background-color: #99E2D0;
   transition: width 0.3;
 }

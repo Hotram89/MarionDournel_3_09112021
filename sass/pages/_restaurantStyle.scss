@@ -55,7 +55,7 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
-
+border: blue 1px solid;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
@@ -80,6 +80,7 @@
 .dish__number {
   font-weight: bold;
   display: flex;
+  flex-shrink: 0;
   font-size: 1.5rem;
   background-color: yellow;
   transition: 0.6s;
@@ -91,7 +92,7 @@
   font-size: 2rem;
   transition: 0.5s;
   width: 2rem;
-  
+
 }
 .dish__validation {
   display: flex;
@@ -99,6 +100,7 @@
   align-items: center;
   width: 0rem;
   height: 100%;
+  flex-shrink: 0;
   background-color: $colour-mint;
   transition: width 0.3;
 }
