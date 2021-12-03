@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+}
+main {
+  margin: 0;
+  width: 100%;
+}
+
 /****************************************************/
 /**********************SEARCH BAR********************/
 /****************************************************/
@@ -20,11 +28,12 @@
   width: 200px;
   padding-left: 1rem;
   font-weight: bold;
+  &__icon {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+  }
 }
-.city__icon {
-  padding-right: 1rem;
-  font-size: 1.2rem;
-}
+
 /****************************************************/
 /*******************ABOUT SECTION********************/
 /****************************************************/
@@ -37,12 +46,12 @@
   background-color: #f6f6f6;
   padding-bottom: 3rem;
   margin-bottom: 2.5rem;
-  .baseline__title {
+  &__title {
     font-weight: bold;
     font-size: 1.5em;
     padding: 2rem 4rem 1rem 4rem;
   }
-  .baseline__description {
+  &__description {
     opacity: 60%;
     margin-bottom: 2rem;
     padding: 0 2rem;
@@ -53,9 +62,10 @@
 /****************SECTION FONCTIONNEMENT**************/
 /****************************************************/
 .fonction {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
+  margin: 0;
+  .section__title {
+    margin-left: 1.5rem;
+  }
 }
 .section__title {
   font-weight: bold;
@@ -68,13 +78,22 @@ i {
   font-style: normal;
 }
 .fa-mobile-alt {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .liste {
-  display: flex;
-  flex-direction: column;
+  margin: 1rem;
   padding-right: 1rem;
-  .liste__item {
+  @include mobile-only {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  &__item {
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -86,7 +105,7 @@ i {
     font-weight: bold;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    .liste__item__number {
+    &__number {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -102,7 +121,7 @@ i {
     p {
       font-weight: 600;
     }
-    .liste__item__icon {
+    &__icon {
       color: grey;
     }
     &:hover {
@@ -123,35 +142,42 @@ i {
   padding: 3rem 1.5rem;
 }
 .container {
-  display: flex;
-  flex-direction: column;
+  @include mobile-only {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
   gap: 1rem;
 }
 .card {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  .card__image img {
+  &__image img {
     height: 175px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
   }
-  .card__details {
+  &__details {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
     border-radius: 0 0 20px 20px;
   }
-  .card__title {
+  &__title {
     font-weight: bold;
     padding-bottom: 0.2rem;
   }
-}
-.card__image img {
-  height: 175px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
 }

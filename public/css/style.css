@@ -1,3 +1,6 @@
+/*****************************/
+/*******BREAKPOINTS***********/
+/*****************************/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 *, *::before, *::after {
@@ -9,11 +12,6 @@ html {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
   overflow-wrap: break-word;
-}
-
-body {
-  min-height: 100vh;
-  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -29,13 +27,9 @@ ul, ol, li, figure {
   list-style: none;
 }
 
-img, svg {
+img {
   vertical-align: middle;
   border-style: none;
-}
-
-svg:not([fill]) {
-  fill: currentColor;
 }
 
 a {
@@ -242,8 +236,8 @@ button, input {
 
 .header__logo {
   font-family: "Shrikhand";
-  font-size: 2rem;
-  padding: 1rem 0px;
+  font-size: 1.9rem;
+  padding: 20px 0 10px 0px;
   background-color: white;
   width: 100%;
 }
@@ -252,14 +246,21 @@ button, input {
 /*********************************/
 .pageHeader {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  text-align: center;
+}
+.pageHeader .header__logo {
+  position: absolute;
+  z-index: -1;
+  padding: 0;
 }
 
 .backhome {
   padding: 2rem;
   font-size: 1.5rem;
   cursor: pointer;
+  z-index: 0;
 }
 
 /****************************************************/
@@ -289,6 +290,15 @@ footer i {
   font-size: 0.7rem;
 }
 
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0;
+  width: 100%;
+}
+
 /****************************************************/
 /**********************SEARCH BAR********************/
 /****************************************************/
@@ -314,7 +324,6 @@ footer i {
   padding-left: 1rem;
   font-weight: bold;
 }
-
 .city__icon {
   padding-right: 1rem;
   font-size: 1.2rem;
@@ -333,12 +342,12 @@ footer i {
   padding-bottom: 3rem;
   margin-bottom: 2.5rem;
 }
-.baseline .baseline__title {
+.baseline__title {
   font-weight: bold;
   font-size: 1.5em;
   padding: 2rem 4rem 1rem 4rem;
 }
-.baseline .baseline__description {
+.baseline__description {
   opacity: 60%;
   margin-bottom: 2rem;
   padding: 0 2rem;
@@ -348,9 +357,10 @@ footer i {
 /****************SECTION FONCTIONNEMENT**************/
 /****************************************************/
 .fonction {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
+  margin: 0;
+}
+.fonction .section__title {
+  margin-left: 1.5rem;
 }
 
 .section__title {
@@ -365,15 +375,28 @@ i {
 }
 
 .fa-mobile-alt {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .liste {
-  display: flex;
-  flex-direction: column;
+  margin: 1rem;
   padding-right: 1rem;
 }
-.liste .liste__item {
+@media screen and (max-width: 576px) {
+  .liste {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+.liste__item {
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -386,7 +409,7 @@ i {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.liste .liste__item .liste__item__number {
+.liste__item__number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -399,17 +422,17 @@ i {
   background-color: #9356dc;
   color: white;
 }
-.liste .liste__item p {
+.liste__item p {
   font-weight: 600;
 }
-.liste .liste__item .liste__item__icon {
+.liste__item__icon {
   color: grey;
 }
-.liste .liste__item:hover {
+.liste__item:hover {
   background-color: #f5edff;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
-.liste .liste__item:hover .liste__item__icon {
+.liste__item:hover .liste__item__icon {
   color: #9356DC;
 }
 
@@ -422,9 +445,28 @@ i {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .card {
@@ -432,29 +474,26 @@ i {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-.card .card__image img {
+.card__image img {
   height: 175px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-.card .card__details {
+.card__details {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   align-items: center;
   border-radius: 0 0 20px 20px;
 }
-.card .card__title {
+.card__title {
   font-weight: bold;
   padding-bottom: 0.2rem;
 }
 
-.card__image img {
-  height: 175px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
+main {
+  margin: 0;
 }
 
 /******* PHOTO ILLUSTRATION*******/
@@ -473,7 +512,6 @@ i {
 /*************************************/
 .menu {
   position: relative;
-  top: -1rem;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -481,7 +519,6 @@ i {
   padding: 2rem 1rem;
   border-radius: 50px 50px 0 0;
 }
-
 .menu__header {
   display: flex;
   justify-content: space-between;
@@ -489,7 +526,7 @@ i {
   font-size: 2rem;
   padding-right: 2rem;
 }
-.menu__header .menu__header__title {
+.menu__header__title {
   font-family: "Shrikhand";
   font-size: 2rem;
   padding: 23px 10px 18px 10px;
@@ -567,14 +604,7 @@ i {
   transition: width 0.3;
 }
 
-.dish__details p {
-  flex: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.dish__details h2 {
+.dish__details h2, .dish__details p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -587,9 +617,8 @@ i {
 }
 
 body {
-  min-width: 375px;
-  margin: auto;
   font-family: "roboto";
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

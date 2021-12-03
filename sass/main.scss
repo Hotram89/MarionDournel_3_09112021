@@ -1,5 +1,6 @@
 //Abstracts
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 // Base
 @import "./base/reset";
 @import "./base/normalize";
@@ -22,8 +23,7 @@
 
 
 body{
-    min-width: 375px;
-    margin: auto;
     font-family: 'roboto';
+    width: 100%;
 }
 

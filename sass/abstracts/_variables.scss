@@ -3,3 +3,16 @@ $colour-secondary: #9356DC;
 $colour-secondary-light: #f5edff;
 $colour-background: #f6f6f6;
 $colour-mint: #99E2D0;
+
+
+/*****************************/
+/*******BREAKPOINTS***********/
+/*****************************/
+ $breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+ );

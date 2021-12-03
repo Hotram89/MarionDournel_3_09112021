@@ -7,10 +7,11 @@
 }
 .header__logo{
     font-family: 'Shrikhand';
-    font-size: 2rem;
-    padding: 1rem 0px;
+    font-size: 1.9rem;
+    padding: 20px 0 10px 0px;
     background-color: white;
     width: 100%;
+
     
     
 }
@@ -20,11 +21,20 @@
 /*********************************/
 .pageHeader{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    text-align: center;
+        .header__logo{
+
+           position: absolute;
+           z-index: -1;
+           padding: 0;
+        }
+        
 }
 .backhome{
     padding: 2rem;
     font-size: 1.5rem;
     cursor: pointer;
+    z-index: 0;
 }

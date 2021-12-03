@@ -1,3 +1,9 @@
+
+
+main{
+  margin: 0;
+
+}
 /******* PHOTO ILLUSTRATION*******/
 /*********************************/
 .illustration {
@@ -13,25 +19,25 @@
 /*************************************/
 .menu {
   position: relative;
-  top: -1rem;
+  
   background-color: $colour-background;
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 2rem 1rem;
   border-radius: 50px 50px 0 0;
-}
-.menu__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 2rem;
-  padding-right: 2rem;
-  .menu__header__title {
-    font-family: "Shrikhand";
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 2rem;
-    padding: 23px 10px 18px 10px;
-    width: 100%;
+    padding-right: 2rem;
+    &__title {
+      font-family: "Shrikhand";
+      font-size: 2rem;
+      padding: 23px 10px 18px 10px;
+      width: 100%;
+    }
   }
 }
 
@@ -91,7 +97,6 @@
   font-size: 2rem;
   transition: 0.5s;
   width: 2rem;
-
 }
 .dish__validation {
   display: flex;
@@ -104,19 +109,10 @@
   background-color: $colour-mint;
   transition: width 0.3;
 }
-.dish__details p
- {
-  flex: 1;
+
+.dish__details h2 , .dish__details p{
   white-space: nowrap;
   overflow: hidden;
-  
-  text-overflow: ellipsis;
-  
-}
-.dish__details h2{
-  white-space: nowrap;
-  overflow: hidden;
-  
   text-overflow: ellipsis;
 }
 .dish__details {

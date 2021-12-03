@@ -7,10 +7,7 @@ html {
     -webkit-text-size-adjust: 100%;
     overflow-wrap: break-word;
 }
-body {
-    min-height: 100vh;
-    margin: 0;
-}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     font-size: inherit;
@@ -22,13 +19,11 @@ ul, ol, li , figure {
    text-indent: 0;
    list-style: none;
 }
-img, svg {
+img {
     vertical-align: middle;
     border-style: none;
 }
-svg:not([fill]) {
-    fill: currentColor;
-}
+
 a {
     color: inherit;
     text-decoration: inherit;

@@ -58,12 +58,11 @@
 }
 *****************************************/
 .menu-list__item:hover {
- 
-  .dish__validation{
+  .dish__validation {
     transition: 0.6s;
     margin-right: 0rem;
   }
-  .checkbox{
+  .checkbox {
     transform: rotate(360deg);
   }
 }
