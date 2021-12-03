@@ -226,7 +226,10 @@ button, input {
 *****************************************/
 .menu-list__item:hover .dish__validation {
   transition: 0.6s;
-  width: 6rem;
+  margin-right: 0rem;
+}
+.menu-list__item:hover .checkbox {
+  transform: rotate(360deg);
 }
 
 .header {
@@ -513,7 +516,6 @@ i {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  border: blue 1px solid;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
@@ -542,7 +544,6 @@ i {
   display: flex;
   flex-shrink: 0;
   font-size: 1.5rem;
-  background-color: yellow;
   transition: 0.6s;
   padding: 1rem 1.5rem;
 }
@@ -558,26 +559,31 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 0rem;
+  width: 6rem;
   height: 100%;
   flex-shrink: 0;
+  margin-right: -6rem;
   background-color: #99E2D0;
   transition: width 0.3;
 }
 
-.dish__details p,
-h2 {
+.dish__details p {
   flex: 1;
   white-space: nowrap;
   overflow: hidden;
-  border: 1px solid blue;
+  text-overflow: ellipsis;
+}
+
+.dish__details h2 {
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .dish__details {
   padding: 1rem;
-  background-color: tomato;
   flex-grow: 1;
+  width: 3rem;
 }
 
 body {
