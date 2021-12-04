@@ -91,7 +91,8 @@ i {
   @include desktop {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap: 2rem;
   }
   &__item {
     display: flex;
@@ -179,5 +180,21 @@ i {
   &__title {
     font-weight: bold;
     padding-bottom: 0.2rem;
+  }
+  &__image {
+    position: relative;
+  }
+  &__tag {
+    position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: $colour-mint;
+  color: $colour-tag;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   }
 }

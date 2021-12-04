@@ -1,16 +1,5 @@
 
-.opening {
-    height: 100vh;
-    width: 100%;
-    background-color: #141614;
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    opacity: 1;
-    z-index: 1;
-    align-items: center;
-   
-}
+
 /*.opening .container {
     display: flex;
     justify-content: center;
@@ -30,7 +19,7 @@
     
     /*animation: spin 1.5s linear infinite;/*inifinite*/
     
-.loader{
+/*.loader{
     width: 15rem;
     height: 15rem;
     position: absolute;
@@ -41,7 +30,7 @@
     
     
    
-}
+}*/
 /*.fa-utensils{
     font-size: 4em;
     position: relative;
@@ -63,3 +52,106 @@
     80% { display: flex; opacity: 1;}
     100% {display: none; opacity: 0;}
 }
+
+html, body {
+    height: 100%;
+  }
+  
+
+  .opening {
+    height: 100vh;
+    width: 100%;
+    background-color: #1D1F20;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    animation: appear 4s forwards;
+   
+}
+  .loader  {
+    animation: rotate 2s infinite;  
+    height: 50px;
+    width: 50px;
+  }
+  
+  .loader:before,
+  .loader:after {   
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 20px;  
+    width: 20px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;  
+    background-color: $colour-primary;
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite; 
+    background-color: $colour-secondary;
+    box-shadow: 30px 0 0 #97bf0d;
+  }
+  
+  @keyframes rotate {
+    0% { 
+      -webkit-transform: rotate(0deg) scale(0.8); 
+      -moz-transform: rotate(0deg) scale(0.8);
+    }
+    50% { 
+      -webkit-transform: rotate(360deg) scale(1.2); 
+      -moz-transform: rotate(360deg) scale(1.2);
+    }
+    100% { 
+      -webkit-transform: rotate(720deg) scale(0.8); 
+      -moz-transform: rotate(720deg) scale(0.8);
+    }
+  }
+  
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 $colour-mint;
+    }
+    50% {
+      box-shadow: 0 0 0 $colour-mint;
+      margin-bottom: 0;
+      -webkit-transform: translate(15px,15px);
+      -moz-transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 $colour-mint;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 $colour-secondary-light;
+    }
+    50% {
+      box-shadow: 0 0 0 $colour-secondary-light;
+      margin-top: -20px;
+      -webkit-transform: translate(15px,15px);
+      -moz-transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 $colour-secondary-light;
+      margin-top: 0;
+    }
+  }
+  @keyframes appear {
+      0% {
+          opacity: 1;
+          display: flex;
+      }
+      80% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+          display: none;
+      }
+  }
