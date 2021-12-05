@@ -124,6 +124,7 @@ html, body {
     100% {
       box-shadow: 30px 0 0 $colour-mint;
       margin-bottom: 10px;
+      
     }
   }
   
@@ -149,9 +150,14 @@ html, body {
       }
       80% {
           opacity: 1;
+        
+      }
+      99% {
+        z-index: 1;
       }
       100% {
           opacity: 0;
-          display: none;
+          z-index: -1;
+          
       }
   }
