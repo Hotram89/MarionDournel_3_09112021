@@ -631,6 +631,7 @@ main {
 .illustration {
   height: 260px;
   width: 100%;
+  overflow: hidden;
 }
 
 .illustration img {
@@ -679,6 +680,24 @@ main {
 
 /*******  MENU*******/
 /*************************************/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .menu .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.menu .container .nav {
+  width: 100%;
+}
+
 .menu-list__item {
   background-color: white;
   display: flex;

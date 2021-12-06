@@ -9,6 +9,7 @@ main{
 .illustration {
   height: 260px;
   width: 100%;
+  overflow: hidden;
 }
 .illustration img {
   object-fit: cover;
@@ -57,6 +58,21 @@ main{
 
 /*******  MENU*******/
 /*************************************/
+.menu .container{
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+}
+.menu .container .nav{
+  width: 100%;
+}
 .menu-list__item {
   background-color: white;
   display: flex;
