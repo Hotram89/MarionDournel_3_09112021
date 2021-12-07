@@ -1,26 +1,50 @@
-.btn{
-    padding: 1.3rem;
-    border-radius: 30px;
-    background: linear-gradient($colour-primary, $colour-secondary);
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
+.btn {
+  padding: 1.3rem;
+  position: relative;
+  border-radius: 30px;
+  background: linear-gradient(
+    to bottom right,
+    $colour-primary,
+    $colour-secondary
+  );
 
-
-.btn-pages {
+  z-index: 0;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  &:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    &::after {
+      opacity: 0.3;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      to bottom right,
+      $colour-primary-light,
+      $colour-secondary-light
+    );
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+  &__page {
     padding: 1.3rem 4rem;
-    border-radius: 30px;
-    background: linear-gradient(#FF79DA, #9356DC);
-    color: white;
+    
     margin-left: auto;
     margin-right: auto;
     display: block;
     text-align: center;
-    width: 15em;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
     margin-bottom: 4rem;
     margin-top: 3rem;
+
+  }
 }

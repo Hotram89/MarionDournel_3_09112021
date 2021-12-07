@@ -1,6 +1,8 @@
+@charset "UTF-8";
 /*****************************/
 /*******BREAKPOINTS***********/
 /*****************************/
+/**************Dégradé de couleurs*********************/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 *, *::before, *::after {
@@ -54,26 +56,40 @@ button, input {
 /*********************************/
 .btn {
   padding: 1.3rem;
+  position: relative;
   border-radius: 30px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  z-index: 0;
   font-weight: bold;
   color: white;
   cursor: pointer;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
-
-.btn-pages {
+.btn:hover {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+.btn:hover::after {
+  opacity: 0.3;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom right, #d980b3, #f5edff);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.btn__page {
   padding: 1.3rem 4rem;
-  border-radius: 30px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
   margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center;
-  width: 15em;
-  cursor: pointer;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 4rem;
   margin-top: 3rem;
 }
@@ -161,7 +177,7 @@ html, body {
   position: fixed;
   z-index: 1;
   align-items: center;
-  animation: appear 4s forwards;
+  animation: appear 3s 250ms forwards;
 }
 
 .loader {
