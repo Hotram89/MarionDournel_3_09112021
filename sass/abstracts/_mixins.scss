@@ -1,3 +1,4 @@
+/********************MEDIA QUERIES***************/
 @mixin mobile-only {
     @media screen and (max-width: map-get($breakpoints, sm)){
         @content;
@@ -15,5 +16,3 @@
     }
     
 }
-
-/**************Dégradé de couleurs*********************/
