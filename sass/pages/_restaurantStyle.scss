@@ -1,9 +1,5 @@
 
 
-main{
-  margin: 0;
-
-}
 /******* PHOTO ILLUSTRATION*******/
 /*********************************/
 .illustration {
@@ -56,6 +52,24 @@ main{
   }
 }
 
+.container {
+  @include mobile-only {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  gap: 1rem;
+}
 /*******  MENU*******/
 /*************************************/
 .menu .container{
@@ -113,6 +127,7 @@ main{
   font-size: 2rem;
   transition: 0.5s;
   width: 2rem;
+  transform: rotate(0deg)
 }
 .dish__validation {
   display: flex;
@@ -123,7 +138,7 @@ main{
   flex-shrink: 0;
   margin-right: -6rem;
   background-color: $colour-mint;
-  transition: width 0.3;
+  
 }
 
 .dish__details h2 , .dish__details p{

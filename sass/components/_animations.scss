@@ -1,7 +1,7 @@
 /****************************************************/
-/****************COEUR ANIMATION*****************/
+/**************** HEART ANIMATION *******************/
 /****************************************************/
-.coeur {
+.heart {
   width: 2rem;
   height: 2rem;
   z-index: 0;
@@ -31,45 +31,28 @@
   transition: 0.6s;
   opacity: 0;
 }
-.coeur:hover .full-heart {
+.heart:hover .full-heart {
   opacity: 1;
 }
 
-/****************animation pas validee***************
-.full-heart {
-  font-size: 1.6rem;
-  color: $colour-secondary;
-  position: relative;
-  top: -1.7rem;
-  z-index: -2;
-}
-.coeur::before {
-  content: "";
-  width: 2.5rem;
-  height: 2.5rem;
-  background: #f6f6f6;
-  transition: all 1s;
-  z-index: -1;
-  top: 0rem;
-  position: absolute;
-}
+/****************************************************/
+/**************** CHECKBOX ANIMATION ****************/
+/****************************************************/
 
-.coeur:hover::before {
-  top: -4rem;
-}
-*****************************************/
-/***************ANIMATION validation*****************/
 .menu-list__item:hover {
   .dish__validation {
-    transition: 0.6s;
+    
     margin-right: 0rem;
+    transition: all 0.6s;
   }
   .checkbox {
     transform: rotate(360deg);
   }
 }
 
-/***************ANIMATION arrivée des plats*****************/
+/****************************************************/
+/***************DISHES FADEIN ANIMATION**************/
+/****************************************************/
 @keyframes fadein {
   0% {opacity: 0;
     transform: translateY(30px);
