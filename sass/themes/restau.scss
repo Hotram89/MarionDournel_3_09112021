@@ -1,10 +1,15 @@
-@import "../themes/default.scss";
+/*********** base commune*************/
+@import "../pages/default";
 
-// Components
+/*******  MENU*******/
+/*************************************/
 @import "../components/button";
 @import "../components/animations";
 
-
+/******* Change graisse police **********/
+/****************************************/
 @import "../pages/restaurantStyle";
+
+
 
 

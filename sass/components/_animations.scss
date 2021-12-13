@@ -35,20 +35,8 @@
   opacity: 1;
 }
 
-/****************************************************/
-/**************** CHECKBOX ANIMATION ****************/
-/****************************************************/
 
-.menu-list__item:hover {
-  .dish__validation {
-    
-    margin-right: 0rem;
-    transition: all 0.6s;
-  }
-  .checkbox {
-    transform: rotate(360deg);
-  }
-}
+
 
 /****************************************************/
 /***************DISHES FADEIN ANIMATION**************/
