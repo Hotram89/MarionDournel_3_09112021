@@ -9,6 +9,9 @@
 /*****************************/
 /*******BREAKPOINTS***********/
 /*****************************/
+/**********************/
+/*******TIME***********/
+/**********************/
 /********************MEDIA QUERIES***************/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
@@ -158,7 +161,7 @@ body {
   width: 100%;
 }
 
-/*******  MENU*******/
+/******************  MENU*************/
 /*************************************/
 .btn {
   padding: 1.3rem;
@@ -252,13 +255,15 @@ body {
     transform: translateY(0px);
   }
 }
-/******* Change graisse police **********/
+/******* Change graisse police *********/
 /****************************************/
 /******* PHOTO ILLUSTRATION*******/
 /*********************************/
 .illustration {
   height: 260px;
   width: 100%;
+  z-index: 0;
+  margin-bottom: -6rem;
   /*overflow: hidden;*/
 }
 
@@ -272,6 +277,7 @@ body {
 /*************************************/
 .menu {
   position: relative;
+  z-index: 10;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -419,6 +425,10 @@ body {
 
 .menu-list__item:nth-child(3) {
   animation-delay: 600ms;
+}
+
+.menu-list__item:nth-child(4) {
+  animation-delay: 800ms;
 }
 
 /*# sourceMappingURL=restau.css.map */
