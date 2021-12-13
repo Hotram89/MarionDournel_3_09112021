@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/****************************/
+/**** Charged each time *****/
+/****************************/
 /**********Premiere couleur******/
 /**********Premiere couleur éclaircie de 20%******/
 /**********Deuxieme couleur******/
@@ -201,7 +204,9 @@ body {
   margin-top: 3rem;
 }
 
-/******loader 4 balles**************/
+/**********************/
+/*** loader 4 balls ***/
+/**********************/
 html, body {
   height: 100%;
 }
@@ -223,23 +228,19 @@ html, body {
   height: 50px;
   width: 50px;
 }
-
-.loader:before,
-.loader:after {
+.loader:before, .loader :after {
   border-radius: 50%;
   content: "";
   display: block;
   height: 20px;
   width: 20px;
 }
-
 .loader:before {
   animation: ball1 1s infinite;
   background-color: #FF79DA;
   box-shadow: 30px 0 0 #f8b334;
   margin-bottom: 10px;
 }
-
 .loader:after {
   animation: ball2 1s infinite;
   background-color: #9356DC;
@@ -318,6 +319,9 @@ html, body {
   transition: 0.6s;
   cursor: pointer;
 }
+.heart:hover .full-heart {
+  opacity: 1;
+}
 
 .fa-heart {
   font-size: 1.8rem;
@@ -341,24 +345,7 @@ html, body {
   opacity: 0;
 }
 
-.heart:hover .full-heart {
-  opacity: 1;
-}
-
-/****************************************************/
-/***************DISHES FADEIN ANIMATION**************/
-/****************************************************/
-@keyframes fadein {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-/* Pages oh super*/
+/********* Page******/
 /****************************************************/
 /**********************SEARCH BAR********************/
 /****************************************************/

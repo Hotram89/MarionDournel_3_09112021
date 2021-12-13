@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/*********** base commune*************/
+/****************************/
+/**** Charged each time *****/
+/****************************/
 /**********Premiere couleur******/
 /**********Premiere couleur éclaircie de 20%******/
 /**********Deuxieme couleur******/
@@ -161,8 +163,6 @@ body {
   width: 100%;
 }
 
-/******************  MENU*************/
-/*************************************/
 .btn {
   padding: 1.3rem;
   position: relative;
@@ -215,6 +215,9 @@ body {
   transition: 0.6s;
   cursor: pointer;
 }
+.heart:hover .full-heart {
+  opacity: 1;
+}
 
 .fa-heart {
   font-size: 1.8rem;
@@ -238,10 +241,9 @@ body {
   opacity: 0;
 }
 
-.heart:hover .full-heart {
-  opacity: 1;
-}
-
+/***********************************************************/
+/******* CSS only available for restaurant pages ***********/
+/***********************************************************/
 /****************************************************/
 /***************DISHES FADEIN ANIMATION**************/
 /****************************************************/
@@ -255,8 +257,17 @@ body {
     transform: translateY(0px);
   }
 }
-/******* Change graisse police *********/
-/****************************************/
+/****************************************************/
+/**************** CHECKBOX ANIMATION ****************/
+/****************************************************/
+.menu-list__item:hover .dish__validation {
+  margin-right: 0rem;
+}
+.menu-list__item:hover .checkbox {
+  transform: rotate(360deg);
+}
+
+/*********************************/
 /******* PHOTO ILLUSTRATION*******/
 /*********************************/
 .illustration {
@@ -264,17 +275,16 @@ body {
   width: 100%;
   z-index: 0;
   margin-bottom: -6rem;
-  /*overflow: hidden;*/
 }
-
 .illustration img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-/******* ASPECT GENERAL DU MENU*******/
-/*************************************/
+/***************************/
+/******* MENU LAYOUT *******/
+/***************************/
 .menu {
   position: relative;
   z-index: 10;
@@ -284,6 +294,19 @@ body {
   height: 100%;
   padding: 2rem 1rem;
   border-radius: 50px 50px 0 0;
+}
+.menu__subtitle {
+  padding-bottom: 1rem;
+  margin-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+.menu__subtitle::after {
+  content: "";
+  padding-bottom: 0.5rem;
+  width: 2.5rem;
+  border-bottom: #99E2D0 3px solid;
 }
 .menu__header {
   display: flex;
@@ -301,23 +324,6 @@ body {
 .menu .container {
   gap: 1rem;
 }
-
-.menu__subtitle {
-  padding-bottom: 1rem;
-  margin-left: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  font-weight: 300;
-}
-.menu__subtitle::after {
-  content: "";
-  padding-bottom: 0.5rem;
-  width: 2.5rem;
-  border-bottom: #99E2D0 3px solid;
-}
-
-/*******  MENU*******/
-/*************************************/
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .menu .container {
     display: grid;
@@ -332,6 +338,9 @@ body {
   }
 }
 
+/**************************/
+/******* LIST ITEMS *******/
+/**************************/
 .menu .container .nav {
   width: 100%;
 }

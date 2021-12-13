@@ -3,3 +3,13 @@
 /**************** CHECKBOX ANIMATION ****************/
 /****************************************************/
 
+.menu-list__item:hover {
+  .dish__validation {
+    
+    margin-right: 0rem;
+   
+  }
+  .checkbox {
+    transform: rotate(360deg);
+  }
+}

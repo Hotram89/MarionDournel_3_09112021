@@ -9,6 +9,9 @@
   overflow: hidden;
   transition: 0.6s;
   cursor: pointer;
+  &:hover .full-heart {
+    opacity: 1;
+  }
 }
 .fa-heart {
   font-size: 1.8rem;
@@ -23,30 +26,10 @@
 .full-heart {
   font-size: 1.8rem;
   position: absolute;
-
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   transition: 0.6s;
   opacity: 0;
-}
-.heart:hover .full-heart {
-  opacity: 1;
-}
-
-
-
-
-/****************************************************/
-/***************DISHES FADEIN ANIMATION**************/
-/****************************************************/
-@keyframes fadein {
-  0% {opacity: 0;
-    transform: translateY(30px);
-  } 
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }

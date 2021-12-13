@@ -1,13 +1,16 @@
-/*********** base commune*************/
+/****************************/
+/**** Charged each time *****/
+/****************************/
 @import "../pages/default";
-
-/******************  MENU*************/
-/*************************************/
 @import "../components/button";
-@import "../components/animations";
+@import "../components/heart-anim";
 
-/******* Change graisse police *********/
-/****************************************/
+/***********************************************************/
+/******* CSS only available for restaurant pages ***********/
+/***********************************************************/
+
+@import "../components/fadein-anim";
+@import "../components/checkbox-anim";
 @import "../pages/restaurantStyle";
 
 

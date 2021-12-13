@@ -1,5 +1,4 @@
-
-
+/*********************************/
 /******* PHOTO ILLUSTRATION*******/
 /*********************************/
 .illustration {
@@ -7,16 +6,16 @@
   width: 100%;
   z-index: 0;
   margin-bottom: -6rem;
-  /*overflow: hidden;*/
-}
-.illustration img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-/******* ASPECT GENERAL DU MENU*******/
-/*************************************/
+/***************************/
+/******* MENU LAYOUT *******/
+/***************************/
 .menu {
   position: relative;
   z-index: 10;
@@ -26,6 +25,19 @@
   height: 100%;
   padding: 2rem 1rem;
   border-radius: 50px 50px 0 0;
+  &__subtitle {
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    &::after {
+      content: "";
+      padding-bottom: 0.5rem;
+      width: 2.5rem;
+      border-bottom: $colour-mint 3px solid;
+    }
+  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -40,40 +52,24 @@
     }
   }
   .container {
-  gap: 1rem;
+    gap: 1rem;
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    @include desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 
-.menu__subtitle {
-  padding-bottom: 1rem;
-  margin-left: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  font-weight: 300;
-  &::after {
-    content: "";
-    padding-bottom: 0.5rem;
-    width: 2.5rem;
-    border-bottom: $colour-mint 3px solid;
-  }
-}
+/**************************/
+/******* LIST ITEMS *******/
+/**************************/
 
-
-/*******  MENU*******/
-/*************************************/
-.menu .container{
-  @include tablet {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  @include desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-  }
-}
-.menu .container .nav{
+.menu .container .nav {
   width: 100%;
 }
 .menu-list__item {
@@ -98,9 +94,7 @@
   }
   &:hover {
     .dish__validation {
-      
       margin-right: 0rem;
-     
     }
     .checkbox {
       transform: rotate(360deg);
@@ -111,7 +105,6 @@
   display: flex;
   align-items: flex-end;
   padding: 0;
-  
 }
 .dish__number {
   font-weight: bold;
@@ -137,11 +130,9 @@
   margin-right: -4rem;
   background-color: $colour-mint;
   transition: all 0.6s;
-  
 }
-.menu-list__item
-
-.dish__details h2 , .dish__details p{
+.menu-list__item .dish__details h2,
+.dish__details p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -153,17 +144,17 @@
 }
 .menu-list__item {
   opacity: 0;
-  animation: fadein 1s ease forwards ;
+  animation: fadein 1s ease forwards;
 }
 .menu-list__item:nth-child(1) {
   animation-delay: $step;
 }
 .menu-list__item:nth-child(2) {
-  animation-delay: $step*2;
+  animation-delay: $step * 2;
 }
 .menu-list__item:nth-child(3) {
-  animation-delay: $step*3;
+  animation-delay: $step * 3;
 }
 .menu-list__item:nth-child(4) {
-  animation-delay: $step*4;
+  animation-delay: $step * 4;
 }

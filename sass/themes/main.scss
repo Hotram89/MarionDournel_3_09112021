@@ -1,11 +1,16 @@
+/****************************/
+/**** Charged each time *****/
+/****************************/
+
 @import "../pages/default";
+
 /*Components*/
 @import "../components/button";
 @import "../components/loader";
-@import "../components/animations";
+@import "../components/heart-anim";
 
 
-/* Pages oh super*/
+/********* Page******/
 @import "../pages/home";
 
 
