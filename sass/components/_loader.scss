@@ -2,108 +2,107 @@
 /*** loader 4 balls ***/
 /**********************/
 
-html, body {
-    height: 100%;
-  }
-  
-  .opening {
-    height: 100vh;
-    width: 100%;
-    background-color: #1D1F20;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    z-index: 1;
-    align-items: center;
-    animation: appear 3s 250ms forwards;
-   
+html,
+body {
+  height: 100%;
 }
-  .loader  {
-    animation: rotate 2s infinite;  
-    height: 50px;
-    width: 50px;
-      &:before, :after {   
-        border-radius: 50%;
-        content: '';
-        display: block;
-        height: 20px;  
-        width: 20px;
-      }
-      &:before {
-        animation: ball1 1s infinite;  
-        background-color: $colour-primary;
-        box-shadow: 30px 0 0 #f8b334;
-        margin-bottom: 10px;
-      }
-      &:after {
-        animation: ball2 1s infinite; 
-        background-color: $colour-secondary;
-        box-shadow: 30px 0 0 #97bf0d;
-      }
+
+.opening {
+  height: 100vh;
+  width: 100%;
+  background-color: #1d1f20;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  align-items: center;
+  animation: appear 3s 250ms forwards;
+}
+.loader {
+  animation: rotate 2s infinite;
+  height: 50px;
+  width: 50px;
+
+  &:after {
+    animation: ball2 1s infinite;
+    background-color: $colour-secondary;
+    box-shadow: 30px 0 0 #97bf0d;
   }
- 
-  @keyframes rotate {
-    0% { 
-      -webkit-transform: rotate(0deg) scale(0.8); 
-      -moz-transform: rotate(0deg) scale(0.8);
-    }
-    50% { 
-      -webkit-transform: rotate(360deg) scale(1.2); 
-      -moz-transform: rotate(360deg) scale(1.2);
-    }
-    100% { 
-      -webkit-transform: rotate(720deg) scale(0.8); 
-      -moz-transform: rotate(720deg) scale(0.8);
-    }
+  &:before {
+    animation: ball1 1s infinite;
+    background-color: $colour-primary;
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
   }
-  
-  @keyframes ball1 {
-    0% {
-      box-shadow: 30px 0 0 $colour-mint;
-    }
-    50% {
-      box-shadow: 0 0 0 $colour-mint;
-      margin-bottom: 0;
-      -webkit-transform: translate(15px,15px);
-      -moz-transform: translate(15px, 15px);
-    }
-    100% {
-      box-shadow: 30px 0 0 $colour-mint;
-      margin-bottom: 10px;
-      
-    }
+  &:before,
+  &:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
   }
-  
-  @keyframes ball2 {
-    0% {
-      box-shadow: 30px 0 0 $colour-secondary-light;
-    }
-    50% {
-      box-shadow: 0 0 0 $colour-secondary-light;
-      margin-top: -20px;
-      -webkit-transform: translate(15px,15px);
-      -moz-transform: translate(15px, 15px);
-    }
-    100% {
-      box-shadow: 30px 0 0 $colour-secondary-light;
-      margin-top: 0;
-    }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.8);
+    -moz-transform: rotate(0deg) scale(0.8);
   }
-  @keyframes appear {
-      0% {
-          opacity: 1;
-          display: flex;
-      }
-      80% {
-          opacity: 1;
-        
-      }
-      99% {
-        z-index: 1;
-      }
-      100% {
-          opacity: 0;
-          z-index: -1;
-          
-      }
+  50% {
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
   }
+  100% {
+    -webkit-transform: rotate(720deg) scale(0.8);
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 $colour-mint;
+  }
+  50% {
+    box-shadow: 0 0 0 $colour-mint;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 $colour-mint;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 $colour-secondary-light;
+  }
+  50% {
+    box-shadow: 0 0 0 $colour-secondary-light;
+    margin-top: -20px;
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 $colour-secondary-light;
+    margin-top: 0;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+  80% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}

@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/****************************/
-/**** Charged each time *****/
-/****************************/
+/*****************************/
+/**** Charged each time ******/
+/*****************************/
 /**********Premiere couleur******/
 /**********Premiere couleur éclaircie de 20%******/
 /**********Deuxieme couleur******/
@@ -23,8 +23,12 @@
 }
 
 body {
-  margin: 0px;
+  font-family: "roboto";
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
 }
 
 main {
@@ -76,6 +80,9 @@ button, input {
 
 /******* POLICES ECRITURE*********/
 /*********************************/
+/***************************/
+/*********HOME HEADER*******/
+/***************************/
 .header {
   display: flex;
   justify-content: center;
@@ -83,7 +90,6 @@ button, input {
   width: 100%;
   text-align: center;
 }
-
 .header__logo {
   font-family: "Shrikhand";
   font-size: 1.9rem;
@@ -92,6 +98,7 @@ button, input {
   width: 100%;
 }
 
+/*********************************/
 /*********RESTAURANT HEADER*******/
 /*********************************/
 .pageHeader {
@@ -158,11 +165,6 @@ footer i {
   font-size: 0.7rem;
 }
 
-body {
-  font-family: "roboto";
-  width: 100%;
-}
-
 .btn {
   padding: 1.3rem;
   position: relative;
@@ -193,7 +195,7 @@ body {
   opacity: 0;
   transition: opacity 250ms;
 }
-.btn__page {
+.btn--page {
   padding: 1.3rem 4rem;
   margin-left: auto;
   margin-right: auto;
@@ -207,12 +209,15 @@ body {
 /**************** HEART ANIMATION *******************/
 /****************************************************/
 .heart {
-  width: 2rem;
-  height: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
   z-index: 0;
   position: relative;
   overflow: hidden;
   transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .heart:hover .full-heart {
@@ -231,7 +236,7 @@ body {
 }
 
 .full-heart {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   position: absolute;
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
@@ -423,19 +428,15 @@ body {
   opacity: 0;
   animation: fadein 1s ease forwards;
 }
-
 .menu-list__item:nth-child(1) {
   animation-delay: 200ms;
 }
-
 .menu-list__item:nth-child(2) {
   animation-delay: 400ms;
 }
-
 .menu-list__item:nth-child(3) {
   animation-delay: 600ms;
 }
-
 .menu-list__item:nth-child(4) {
   animation-delay: 800ms;
 }

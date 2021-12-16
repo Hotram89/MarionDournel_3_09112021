@@ -3,9 +3,13 @@
     min-width: 0;
 }
 
-body {
-    margin: 0px;
+body{
+    font-family: 'roboto';
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
 }
 main {
     margin: 0;

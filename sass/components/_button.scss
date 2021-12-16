@@ -36,15 +36,14 @@
     opacity: 0;
     transition: opacity 250ms;
   }
-  &__page {
+  &--page {
     padding: 1.3rem 4rem;
-    
+
     margin-left: auto;
     margin-right: auto;
     display: block;
     text-align: center;
     margin-bottom: 4rem;
     margin-top: 3rem;
-
   }
 }

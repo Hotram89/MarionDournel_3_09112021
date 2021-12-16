@@ -1,4 +1,6 @@
+
 //Abstracts
+
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 // Base
@@ -9,8 +11,3 @@
 @import "../layouts/header";
 @import "../layouts/footer";
 
-body{
-    font-family: 'roboto';
-    width: 100%;
-   
-}

@@ -1,40 +1,38 @@
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-}
-.header__logo{
-    font-family: 'Shrikhand';
+/***************************/
+/*********HOME HEADER*******/
+/***************************/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  &__logo {
+    font-family: "Shrikhand";
     font-size: 1.9rem;
     padding: 20px 0 10px 0px;
     background-color: white;
     width: 100%;
-
-    
-    
+  }
 }
 
-
+/*********************************/
 /*********RESTAURANT HEADER*******/
 /*********************************/
-.pageHeader{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-        .header__logo{
-
-           position: absolute;
-           z-index: -1;
-           padding: 0;
-        }
-        
+.pageHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  .header__logo {
+    position: absolute;
+    z-index: -1;
+    padding: 0;
+  }
 }
-.backhome{
-    padding: 2rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 0;
+.backhome {
+  padding: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 0;
 }
