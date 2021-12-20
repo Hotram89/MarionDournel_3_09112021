@@ -12,12 +12,10 @@ $colour-secondary-light: #f5edff;
 
 /**********Couleur de font**************/
 $colour-background: #f6f6f6;
-
+$colour-background-loader: #1d1f20;
 /*********les Verts*****************/
 $colour-mint: #99E2D0;
 $colour-tag: #008766 ;
-
-
 
 /*****************************/
 /*******BREAKPOINTS***********/
@@ -35,3 +33,4 @@ $colour-tag: #008766 ;
 /*******TIME***********/
 /**********************/
 $step: 200ms;
+$time-heart: 0.6s;
